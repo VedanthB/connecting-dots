@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 const createRowsArr = (rowsNumber) => {
   let result = [];
@@ -42,7 +42,7 @@ const App = () => {
   const [cols, setCols] = useState([]);
   const [player, setPlayer] = useState('Red');
   const [player1, setPlayer1] = useState('Player One');
-  const [player2, setPlayer2] = useState('Player One');
+  const [player2, setPlayer2] = useState('Player Two');
 
   const handleOnMouseEnter = (e) => {
     const colIndex = e.target.dataset.col;
